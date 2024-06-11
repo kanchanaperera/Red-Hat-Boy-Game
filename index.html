@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Red Hat Boy</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="background" id="background" onkeyup="controller(event);">
+    <div id="startScreen" class="start-screen">
+        <h1>The Red Hat Boy</h1>
+        <button onclick="prepareGame()">Start</button>
+        <div class="watermark1">Created by,</div>
+        <div class="watermark2">M.K.V Perera</div>
+        <div class="watermark3">200730405720</div>
+    </div>
+    <div class="score" id="score">0</div>
+    <img src="run1.png" class="boy" id="boy" style="display:none;"/>
+    <div id="gameOverScreen" class="game-over-screen" style="display: none;">
+        <h1>Game Over</h1>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <button onclick="restartGame()">Try Again !!!</button>
+    </div>
+    <div id="winScreen" class="win-screen" style="display: none;">
+        <h1>You Won!</h1>
+        <p>Your Score: <span id="winScore"></span></p>
+        <button onclick="restartGame()">Restart***</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
